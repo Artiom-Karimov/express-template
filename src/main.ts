@@ -3,6 +3,9 @@ config();
 import { CompositionRoot } from './composition-root';
 
 const root = new CompositionRoot();
-const app = root.getApp();
 
+const handler = root.getErrorHandler();
+handler.bindUncaught();
+
+const app = root.getApp();
 app.start();

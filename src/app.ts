@@ -5,7 +5,7 @@ import * as cookieParser from 'cookie-parser';
 import { injectable } from 'inversify';
 import * as express from 'express';
 import { AppController } from './app/app-controller';
-import { config } from './config';
+import { config } from './common/config';
 
 @injectable()
 export class App {
