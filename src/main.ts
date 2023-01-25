@@ -1,5 +1,6 @@
-export const start = () => {
-  console.log('hell-o');
-};
+import { CompositionRoot } from './composition-root';
 
-start();
+const root = new CompositionRoot();
+const app = root.getApp();
+
+app.start();
