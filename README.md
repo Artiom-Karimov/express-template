@@ -1,4 +1,4 @@
-## Typescript nodejs boilerplate.
+## Typescript express API boilerplate.
 ### Common deps installed: 
 - typescript
 - jest
@@ -6,3 +6,8 @@
 - nodemon
 - eslint
 - prettier
+- inversify
+- dotenv
+- express
+- cors
+- cookie-parser
