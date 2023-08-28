@@ -17,10 +17,10 @@ export class CompositionRoot {
     this.container.bind<App>(App).toSelf();
   }
 
-  public getApp(): App {
+  get app(): App {
     return this.container.resolve(App);
   }
-  public getErrorHandler(): ErrorHandler {
+  get errorHandler(): ErrorHandler {
     return this.container.resolve(ErrorHandler);
   }
 }

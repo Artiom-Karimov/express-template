@@ -4,8 +4,8 @@ import { CompositionRoot } from './composition-root';
 
 const root = new CompositionRoot();
 
-const handler = root.getErrorHandler();
+const handler = root.errorHandler;
 handler.bindUncaught();
 
-const app = root.getApp();
+const app = root.app;
 app.start();

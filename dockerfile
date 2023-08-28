@@ -1,5 +1,5 @@
 FROM node:lts-bullseye-slim
 WORKDIR /usr/src/app
 COPY . /usr/src/app/
-RUN npm install && npm run build
+RUN yarn && yarn build
 CMD npm run start

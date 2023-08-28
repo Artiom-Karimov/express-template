@@ -4,7 +4,7 @@ import { Logger } from '../interfaces/logger';
 
 @injectable()
 export class ErrorHandler {
-  constructor(private readonly logger: Logger) { }
+  constructor(private readonly logger: Logger) {}
 
   public bindUncaught() {
     process.on('uncaughtException', (error: any) => this.handleError(error));

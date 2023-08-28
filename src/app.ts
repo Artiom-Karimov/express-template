@@ -13,7 +13,10 @@ export class App {
   public readonly port: number;
   public readonly server: Server;
 
-  constructor(private readonly logger: Logger, appController: AppController) {
+  constructor(
+    private readonly logger: Logger,
+    appController: AppController,
+  ) {
     this.port = config.port;
 
     const app = express();
